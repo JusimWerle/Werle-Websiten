@@ -1,0 +1,584 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kremer u. Grieb Schlosserei – Schlosserei &amp; Metallbau in Altrip</title>
+<meta name="description" content="Kremer u. Grieb Schlosserei in Altrip: Zäune, Tore, Geländer, Garagentore, Stahltreppen, Carports, Fenstergitter und Edelstahlverarbeitung. Seit 1997 in Altrip. Jetzt anrufen: 06236 425153.">
+<meta property="og:title" content="Kremer u. Grieb Schlosserei – Schlosserei &amp; Metallbau in Altrip">
+<meta property="og:description" content="Schlosserei &amp; Metallbau in Altrip seit 1997: Zäune, Tore, Geländer, Stahltreppen, Carports, Edelstahlverarbeitung und mehr.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<style>
+  :root {
+    --color-primary: #1E293B;
+    --color-primary-hover: #0F172A;
+    --color-accent: #EA580C;
+    --color-accent-hover: #C2410C;
+    --color-bg: #F8FAFC;
+    --color-surface: #FFFFFF;
+    --color-on-surface: #334155;
+    --color-on-primary: #F8FAFC;
+    --color-muted: #64748B;
+    --color-border: #E2E8F0;
+    --color-danger: #DC2626;
+    --font-heading: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-body: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --shadow-card: 0 1px 3px rgba(15,23,42,.08), 0 1px 2px rgba(15,23,42,.06);
+    --shadow-elevated: 0 4px 12px rgba(15,23,42,.12);
+    --max-width: 1152px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--color-bg);
+    color: var(--color-on-surface);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3 { font-family: var(--font-heading); font-weight: 700; line-height: 1.2; margin: 0; color: inherit; }
+  p { margin: 0; }
+  ul { margin: 0; }
+  a { color: inherit; text-decoration: none; }
+  img, svg { display: block; max-width: 100%; }
+  button { font: inherit; cursor: pointer; }
+
+  .sr-only {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+  }
+  .skip-link:focus {
+    position: fixed; top: 8px; left: 8px; width: auto; height: auto;
+    padding: 10px 16px; margin: 0; clip: auto; white-space: normal;
+    background: var(--color-accent); color: #fff; border-radius: var(--radius-md); z-index: 100;
+  }
+
+  .container { max-width: var(--max-width); margin: 0 auto; padding: 0 20px; }
+
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    font-weight: 600; font-family: var(--font-body); border-radius: var(--radius-md);
+    padding: 14px 28px; min-height: 44px; border: none; transition: background-color .2s ease, transform .15s ease;
+  }
+  .btn svg { width: 20px; height: 20px; flex-shrink: 0; }
+  .btn-accent { background: var(--color-accent); color: #fff; }
+  .btn-accent:hover { background: var(--color-accent-hover); }
+  .btn-outline-light { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,.35); }
+  .btn-outline-light:hover { background: rgba(255,255,255,.1); }
+  .btn-primary { background: var(--color-primary); color: #fff; }
+  .btn-primary:hover { background: var(--color-primary-hover); }
+  .btn-outline { background: transparent; color: var(--color-on-surface); border: 1px solid var(--color-border); }
+  .btn-outline:hover { background: rgba(226,232,240,.5); }
+
+  a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--color-accent); outline-offset: 2px; border-radius: var(--radius-sm);
+  }
+
+  /* Header */
+  .site-header {
+    position: sticky; top: 0; z-index: 40; background: rgba(30,41,59,.97);
+    backdrop-filter: blur(8px); border-bottom: 1px solid rgba(255,255,255,.1);
+  }
+  .header-bar { height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+  .wordmark { font-weight: 700; font-size: 1.15rem; color: var(--color-on-primary); white-space: nowrap; }
+  .wordmark .accent { color: var(--color-accent); }
+  .nav-desktop { display: none; align-items: center; gap: 32px; }
+  .nav-desktop a, .mobile-menu a {
+    color: rgba(248,250,252,.9); font-weight: 600; font-size: .9rem;
+  }
+  .nav-desktop a:hover, .mobile-menu a:hover { color: #fff; }
+  .header-actions { display: flex; align-items: center; gap: 12px; }
+  .call-btn { padding: 10px 16px; font-size: .9rem; }
+  .call-text-full { display: none; }
+  .call-text-short { display: inline; }
+  .menu-btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 44px; height: 44px; background: transparent; border: none; color: var(--color-on-primary);
+    border-radius: var(--radius-md);
+  }
+  .menu-btn svg { width: 24px; height: 24px; }
+  .icon-close { display: none; }
+  .mobile-menu {
+    display: none; border-top: 1px solid rgba(255,255,255,.1); background: var(--color-primary);
+  }
+  .mobile-menu.open { display: block; }
+  .mobile-menu-list { display: flex; flex-direction: column; gap: 2px; padding: 12px 0; }
+  .mobile-menu-list a { padding: 12px 0; }
+
+  @media (min-width: 768px) {
+    .nav-desktop { display: flex; }
+    .menu-btn { display: none; }
+    .call-text-full { display: inline; }
+    .call-text-short { display: none; }
+  }
+
+  /* Hero */
+  .hero { position: relative; background: var(--color-primary); overflow: hidden; }
+  .hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; opacity: .07; }
+  .hero-inner {
+    position: relative; padding: 64px 0; display: grid; gap: 40px; align-items: center;
+  }
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 8px; color: var(--color-accent);
+    font-weight: 600; font-size: .85rem; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 16px;
+  }
+  .eyebrow-line { width: 32px; height: 1px; background: var(--color-accent); }
+  .hero h1 { font-size: 2.4rem; color: #fff; margin-bottom: 20px; }
+  .hero-lead { color: rgba(248,250,252,.85); font-size: 1.125rem; max-width: 32rem; margin-bottom: 32px; }
+  .hero-ctas { display: flex; flex-direction: column; gap: 16px; }
+  .hero-art { display: none; justify-self: center; }
+
+  @media (min-width: 640px) {
+    .hero-ctas { flex-direction: row; }
+  }
+  @media (min-width: 768px) {
+    .hero-inner { grid-template-columns: 1fr 1fr; padding: 96px 0; }
+    .hero h1 { font-size: 3rem; }
+    .hero-art { display: flex; }
+  }
+
+  /* Section headings */
+  .section { padding: 64px 0; }
+  .section-head { max-width: 42rem; margin-bottom: 48px; }
+  .section-head h2 { font-size: 1.9rem; color: var(--color-on-surface); margin-bottom: 16px; }
+  .section-head p { color: var(--color-muted); font-size: 1.125rem; }
+  @media (min-width: 768px) {
+    .section { padding: 96px 0; }
+    .section-head h2 { font-size: 2.25rem; }
+  }
+
+  /* Services */
+  .service-grid { display: grid; grid-template-columns: 1fr; gap: 24px; }
+  @media (min-width: 640px) { .service-grid { grid-template-columns: 1fr 1fr; } }
+  @media (min-width: 1024px) { .service-grid { grid-template-columns: 1fr 1fr 1fr; } }
+  .service-card {
+    background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg);
+    padding: 24px; box-shadow: var(--shadow-card); transition: box-shadow .2s ease, transform .2s ease;
+  }
+  .service-card:hover { box-shadow: var(--shadow-elevated); transform: translateY(-2px); }
+  .service-icon { color: var(--color-accent); margin-bottom: 16px; }
+  .service-icon svg { width: 36px; height: 36px; }
+  .service-card h3 { font-size: 1.125rem; margin-bottom: 8px; }
+  .service-card p { color: var(--color-muted); font-size: .9rem; }
+
+  /* About */
+  .about { background: var(--color-primary); }
+  .about-inner { display: grid; gap: 40px; align-items: start; }
+  .about h2 { font-size: 1.9rem; color: #fff; margin-bottom: 24px; }
+  .about p { color: rgba(248,250,252,.85); font-size: 1.125rem; margin-bottom: 16px; }
+  .about p.small { color: rgba(248,250,252,.7); font-size: 1rem; }
+  .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .stat-card {
+    background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.1); border-radius: var(--radius-lg);
+    padding: 20px; text-align: center;
+  }
+  .stat-card.full { grid-column: 1 / -1; }
+  .stat-number { font-family: var(--font-heading); font-weight: 700; font-size: 1.5rem; color: var(--color-accent); }
+  .stat-label { color: rgba(248,250,252,.7); font-size: .875rem; margin-top: 4px; }
+  @media (min-width: 768px) {
+    .about-inner { grid-template-columns: 2fr 1fr; }
+  }
+
+  /* Hours */
+  .hours-section { padding: 48px 0; }
+  .hours-card {
+    background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg);
+    padding: 24px; display: flex; flex-direction: column; gap: 20px; justify-content: space-between;
+  }
+  .hours-left { display: flex; align-items: flex-start; gap: 16px; }
+  .hours-left svg { width: 32px; height: 32px; color: var(--color-accent); flex-shrink: 0; margin-top: 2px; }
+  .hours-left h2 { font-size: 1.1rem; margin-bottom: 6px; }
+  .badge-warning {
+    display: inline-block; background: rgba(220,38,38,.1); color: var(--color-danger);
+    font-weight: 600; padding: 4px 10px; border-radius: var(--radius-md); font-size: .85rem;
+  }
+  .hours-note { color: var(--color-muted); font-size: .9rem; margin-top: 8px; }
+  @media (min-width: 640px) {
+    .hours-card { flex-direction: row; align-items: center; }
+  }
+
+  /* Contact */
+  .contact-grid { display: grid; grid-template-columns: 1fr; gap: 24px; }
+  @media (min-width: 768px) { .contact-grid { grid-template-columns: 1fr 1fr; } }
+  .contact-card, .address-card {
+    background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg);
+    padding: 32px;
+  }
+  .contact-list { display: flex; flex-direction: column; gap: 24px; margin-bottom: 32px; }
+  .contact-item { display: flex; align-items: flex-start; gap: 16px; }
+  .contact-item svg { width: 24px; height: 24px; color: var(--color-accent); flex-shrink: 0; margin-top: 2px; }
+  .contact-item .label { font-weight: 700; margin-bottom: 2px; }
+  .contact-item .value { color: var(--color-muted); }
+  .contact-item .value.accent-link { color: var(--color-accent); font-weight: 600; }
+  .contact-item .value.accent-link:hover { color: var(--color-accent-hover); }
+  .contact-buttons { display: flex; flex-direction: column; gap: 12px; }
+  @media (min-width: 640px) { .contact-buttons { flex-direction: row; } }
+
+  .address-card { display: flex; flex-direction: column; align-items: center; text-align: center; justify-content: center; gap: 16px; min-height: 320px; }
+  .address-card svg { width: 64px; height: 64px; color: var(--color-accent); }
+  .address-card .address-name { font-family: var(--font-heading); font-weight: 700; font-size: 1.1rem; }
+  .address-card .address-line { color: var(--color-muted); }
+
+  /* Footer */
+  .site-footer { background: var(--color-primary); border-top: 1px solid rgba(255,255,255,.1); }
+  .footer-inner { padding: 40px 0; display: flex; flex-direction: column; gap: 24px; }
+  .footer-brand p { color: rgba(248,250,252,.7); font-size: .9rem; }
+  .footer-brand .wordmark { display: block; margin-bottom: 8px; }
+  .footer-legal { display: flex; gap: 24px; font-size: .9rem; }
+  .footer-legal a { color: rgba(248,250,252,.7); }
+  .footer-legal a:hover { color: #fff; }
+  .footer-copy { color: rgba(248,250,252,.5); font-size: .75rem; margin-top: 32px; }
+  @media (min-width: 640px) {
+    .footer-inner { flex-direction: row; justify-content: space-between; align-items: flex-start; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+  }
+</style>
+</head>
+<body>
+
+<a href="#main" class="sr-only skip-link">Zum Inhalt springen</a>
+
+<header class="site-header">
+  <div class="container header-bar">
+    <a href="#main" class="wordmark">Kremer u. Grieb <span class="accent">Schlosserei</span></a>
+
+    <nav aria-label="Hauptnavigation" class="nav-desktop">
+      <a href="#leistungen">Leistungen</a>
+      <a href="#ueber-uns">Über uns</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="tel:+496236425153" class="btn btn-accent call-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92Z"/>
+        </svg>
+        <span class="call-text-full">06236 425153</span>
+        <span class="call-text-short">Anrufen</span>
+      </a>
+      <button id="menu-btn" type="button" aria-controls="mobile-menu" aria-expanded="false" class="menu-btn" aria-label="Menü öffnen">
+        <svg id="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+        <svg id="icon-close" class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M6 6l12 12M18 6L6 18"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <nav id="mobile-menu" aria-label="Mobile Navigation" class="mobile-menu">
+    <div class="container mobile-menu-list">
+      <a href="#leistungen">Leistungen</a>
+      <a href="#ueber-uns">Über uns</a>
+      <a href="#kontakt">Kontakt</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <svg class="hero-bg" preserveAspectRatio="xMidYMid slice" viewBox="0 0 800 600" aria-hidden="true">
+      <defs>
+        <pattern id="grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+          <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="1"/>
+        </pattern>
+      </defs>
+      <rect width="800" height="600" fill="url(#grid-pattern)"/>
+      <path d="M100 500 L100 380 L180 380 L180 500 M140 380 L140 500" stroke="white" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M220 500 L220 380 L300 380 L300 500 M260 380 L260 500" stroke="white" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <circle cx="620" cy="140" r="90" stroke="white" stroke-width="2" fill="none"/>
+      <circle cx="620" cy="140" r="55" stroke="white" stroke-width="2" fill="none"/>
+    </svg>
+
+    <div class="container hero-inner">
+      <div>
+        <p class="eyebrow"><span class="eyebrow-line"></span> Schlosserei &amp; Metallbau seit 1997</p>
+        <h1>Kremer u. Grieb Schlosserei</h1>
+        <p class="hero-lead">Zäune, Tore, Geländer, Stahltreppen, Carports und Edelstahlverarbeitung – solides Metallbau-Handwerk aus Altrip, ganz in Ihrer Nähe.</p>
+        <div class="hero-ctas">
+          <a href="tel:+496236425153" class="btn btn-accent">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92Z"/>
+            </svg>
+            Jetzt anrufen: 06236 425153
+          </a>
+          <a href="#kontakt" class="btn btn-outline-light">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20.94 11a8.94 8.94 0 1 0-9.94 9.94"/><path d="M12 2a15.3 15.3 0 0 1 0 20"/><path d="M12 2a15.3 15.3 0 0 0 0 20"/><path d="M2 12h20"/>
+            </svg>
+            Anfahrt &amp; Kontakt
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <svg width="100%" style="max-width:320px" viewBox="0 0 320 320" fill="none">
+          <rect x="20" y="20" width="280" height="280" rx="12" stroke="#EA580C" stroke-width="2" stroke-dasharray="6 8" opacity="0.5"/>
+          <g stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M60 260 V150 M100 260 V150 M140 260 V150 M180 260 V150 M220 260 V150 M260 260 V150"/>
+            <path d="M50 150 H270"/>
+            <path d="M50 120 H270" stroke-opacity="0.6"/>
+          </g>
+          <g stroke="#EA580C" stroke-width="4" stroke-linecap="round">
+            <path d="M150 100 l20 -20 l20 20"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section id="leistungen" class="section" style="scroll-margin-top:64px;">
+    <div class="container">
+      <div class="section-head">
+        <h2>Unsere Leistungen</h2>
+        <p>Von Zaun und Tor bis zur individuellen Stahlkonstruktion – wir übernehmen Metallbau- und Schlosserarbeiten für Privat- und Gewerbekunden in Altrip und Umgebung.</p>
+      </div>
+
+      <div class="service-grid">
+
+        <article class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 20V9l4-3v14M14 20V9l4-3v14M4 12h4M14 12h4M9 6v14"/>
+            </svg>
+          </div>
+          <h3>Zäune &amp; Tore</h3>
+          <p>Individuell gefertigte Zäune und Tore aus Metall – stabil, langlebig und passgenau für Ihr Grundstück.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 20h4v-4h4v-4h4v-4h4M4 20v-4M8 16v-4M12 12V8M16 8V4"/>
+            </svg>
+          </div>
+          <h3>Geländer &amp; Stahltreppen</h3>
+          <p>Geländer und Stahltreppen nach Maß – sicher verarbeitet für innen und außen.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 21V9l9-5 9 5v12M3 21h18M6 21v-8h12v8"/>
+            </svg>
+          </div>
+          <h3>Garagentore &amp; -antriebe</h3>
+          <p>Montage und Ausstattung von Garagentoren inklusive passender Antriebstechnik.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="8" width="18" height="12" rx="1"/><path d="M3 8l9 6 9-6"/>
+            </svg>
+          </div>
+          <h3>Briefkastenanlagen</h3>
+          <p>Robuste Briefkastenanlagen für Ein- und Mehrfamilienhäuser, fachgerecht montiert.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"/><path d="m9 12 2 2 4-4"/>
+            </svg>
+          </div>
+          <h3>Hausabsicherung</h3>
+          <p>Maßnahmen zur Einbruchhemmung und Hausabsicherung aus einer Hand.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 10 12 4l9 6"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/>
+            </svg>
+          </div>
+          <h3>Carports &amp; Überdachungen</h3>
+          <p>Stabile Stahlkonstruktionen für Carports und kleinere Überdachungen.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="4" y="4" width="16" height="16" rx="1"/><path d="M4 10h16M4 16h16M10 4v16M16 4v16"/>
+            </svg>
+          </div>
+          <h3>Fenstergitter</h3>
+          <p>Fenstergitter zum Schutz von Wohn- und Gewerberäumen, individuell gefertigt.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="9"/><path d="M8 12a4 4 0 0 1 4-4M16 12a4 4 0 0 1-4 4"/>
+            </svg>
+          </div>
+          <h3>Edelstahlverarbeitung</h3>
+          <p>Verarbeitung von Edelstahl für langlebige, hochwertige Metallbauteile.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M14.5 3.5 20.5 9.5 9 21H3v-6L14.5 3.5Z"/><path d="M13 5 19 11"/>
+            </svg>
+          </div>
+          <h3>Schlosser-, Bohr- &amp; Schweißarbeiten</h3>
+          <p>Allgemeine Schlosserarbeiten in der Metallwerkstatt, inklusive Bohr- und Schweißarbeiten.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="ueber-uns" class="section about" style="scroll-margin-top:64px;">
+    <div class="container about-inner">
+      <div>
+        <h2>Über uns</h2>
+        <p>Kremer u. Grieb Schlosserei ist ein Schlosser- und Metallbaubetrieb mit Sitz in Altrip. Der Betrieb besteht seit 1997 und fertigt Metallbauteile für Privat- und Gewerbekunden – von Zäunen und Toren über Geländer und Stahltreppen bis hin zu Edelstahlverarbeitung und allgemeinen Schlosserarbeiten.</p>
+        <p class="small">Für aktuelle Anfragen und individuelle Projekte erreichen Sie den Betrieb telefonisch unter 06236 425153.</p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number">1997</div>
+          <div class="stat-label">Gegründet</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" style="font-size:1.15rem;">Schlosserei</div>
+          <div class="stat-label">&amp; Metallbau</div>
+        </div>
+        <div class="stat-card full">
+          <div class="stat-number" style="font-size:1.15rem;">Altrip &amp; Umgebung</div>
+          <div class="stat-label">Einsatzgebiet</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hours-section" aria-labelledby="oeffnungszeiten-heading">
+    <div class="container">
+      <div class="hours-card">
+        <div class="hours-left">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/>
+          </svg>
+          <div>
+            <h2 id="oeffnungszeiten-heading">Öffnungszeiten</h2>
+            <span class="badge-warning">Öffnungszeiten bitte bestätigen</span>
+            <p class="hours-note">Bitte rufen Sie vorab an, um einen Termin oder aktuelle Erreichbarkeit abzustimmen.</p>
+          </div>
+        </div>
+        <a href="tel:+496236425153" class="btn btn-accent" style="white-space:nowrap;">06236 425153</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontakt" class="section" style="scroll-margin-top:64px;">
+    <div class="container">
+      <div class="section-head" style="margin-bottom:40px;">
+        <h2>Kontakt &amp; Anfahrt</h2>
+        <p>Rufen Sie uns an oder planen Sie Ihre Route zu unserem Betrieb in Altrip.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-list">
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/>
+              </svg>
+              <div>
+                <div class="label">Adresse</div>
+                <div class="value">Reginostr. 6, 67122 Altrip</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92Z"/>
+              </svg>
+              <div>
+                <div class="label">Telefon</div>
+                <a href="tel:+496236425153" class="value accent-link">06236 425153</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7 10-7"/>
+              </svg>
+              <div>
+                <div class="label">E-Mail</div>
+                <span class="badge-warning">E-Mail-Adresse ergänzen</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-buttons">
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Reginostr.%206%2C%2067122%20Altrip" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Route planen</a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Reginostr.%206%2C%2067122%20Altrip" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Auf Google Maps ansehen</a>
+          </div>
+        </div>
+
+        <div class="address-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/>
+          </svg>
+          <div class="address-name">Kremer u. Grieb Schlosserei</div>
+          <div class="address-line">Reginostr. 6</div>
+          <div class="address-line">67122 Altrip</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="wordmark">Kremer u. Grieb <span class="accent">Schlosserei</span></span>
+      <p>Reginostr. 6, 67122 Altrip</p>
+      <p><a href="tel:+496236425153">06236 425153</a></p>
+    </div>
+    <nav aria-label="Rechtliches" class="footer-legal">
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </nav>
+  </div>
+  <div class="container">
+    <p class="footer-copy">&copy; 2026 Kremer u. Grieb Schlosserei</p>
+  </div>
+</footer>
+
+<script>
+  var menuBtn = document.getElementById('menu-btn');
+  var mobileMenu = document.getElementById('mobile-menu');
+  var iconOpen = document.getElementById('icon-open');
+  var iconClose = document.getElementById('icon-close');
+  menuBtn.addEventListener('click', function () {
+    var isOpen = mobileMenu.classList.contains('open');
+    mobileMenu.classList.toggle('open');
+    iconOpen.classList.toggle('icon-close');
+    iconClose.classList.toggle('icon-close');
+    menuBtn.setAttribute('aria-expanded', String(!isOpen));
+  });
+  mobileMenu.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', function () {
+      mobileMenu.classList.remove('open');
+      iconOpen.classList.remove('icon-close');
+      iconClose.classList.add('icon-close');
+      menuBtn.setAttribute('aria-expanded', 'false');
+    });
+  });
+</script>
+
+</body>
+</html>
