@@ -25,8 +25,8 @@
 - **Dark Mode:** nein. Einfacher, robuster Ein-Modus-Auftritt für einen lokalen Handwerksbetrieb.
 
 ## 3. Typografie
-- **Heading-Font:** Lexend (Google Fonts), Gewichte 600 (Semibold) / 700 (Bold)
-- **Body-Font:** Source Sans 3 (Google Fonts), Gewichte 400 (Regular) / 600 (Semibold für Hervorhebungen)
+- **Heading-Font:** ursprünglich Lexend (Google Fonts) geplant; im Build auf System-Font-Stack (`-apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif`) umgestellt, Gewicht 700 — damit ist die Datei vollständig self-contained (kein externer Font-Ladevorgang nötig, funktioniert auch offline/in restriktiven Vorschauen)
+- **Body-Font:** ursprünglich Source Sans 3 (Google Fonts) geplant; im Build ebenfalls System-Font-Stack, Gewichte 400/600
 - **Type-Scale (px):** H1 44 / H2 32 / H3 22 / Body 16 / Small 14
 - **Line-height:** Headings 1.15–1.25 / Body 1.6
 - **Regeln:** Body ≥ 16px, Zeilenlänge 60–75 Zeichen im Fließtext, Gewichte statt Farbschwankungen zur Hierarchie nutzen.
@@ -57,7 +57,7 @@
 - **Leistungen:** Überschrift „Unsere Leistungen" + Subline. 3-Spalten-Kartengrid Desktop (2 Tablet, 1 Mobil) mit Icon, Titel, Kurztext pro Leistung (Zäune, Tore, Geländer, Garagentore/-antriebe, Briefkastenanlagen, Hausabsicherung, Stahltreppen, Carports/Überdachungen, Fenstergitter, Edelstahlverarbeitung, allgemeine Schlosser-/Schweißarbeiten).
 - **Über uns:** Einspaltig, max-width ~720px zentriert oder zweispaltig mit Kennzahlen-Leiste („seit 1997", „Schlosserei & Metallbau", „Altrip & Umgebung") neben kurzem Fließtext zur Betriebsgeschichte (nur belegte Fakten).
 - **Öffnungszeiten:** Kompakte Sektion/Card auf `--color-surface`, Platzhalter-Badge „Öffnungszeiten bitte bestätigen", Hinweis „Bitte vorab anrufen" mit Telefon-CTA.
-- **Kontakt & Anfahrt:** Zweispaltig Desktop: links Adresse (Reginostr. 6, 67122 Altrip), Telefon (groß, klickbar), Platzhalter für E-Mail; rechts eingebettete Google-Maps-Karte (statisches iframe-Embed ohne API-Key, `q=Reginostr.+6,+67122+Altrip`). Einspaltig mobil, Karte unter den Kontaktdaten.
+- **Kontakt & Anfahrt:** Zweispaltig Desktop: links Adresse (Reginostr. 6, 67122 Altrip), Telefon (groß, klickbar), Platzhalter für E-Mail, Buttons „Route planen"/„Auf Google Maps ansehen" (externe Links, öffnen erst per Klick in neuem Tab); rechts statische Adresskarte mit Standort-Icon (keine live eingebettete Karte — Datei bleibt dadurch vollständig self-contained und ohne externe Netzwerk-Abhängigkeit beim Laden). Einspaltig mobil.
 - **Footer:** Dunkler Streifen (`--color-primary`), Kontaktzeile (Adresse/Telefon) + Copyright „© 2026 Kremer u. Grieb Schlosserei" + Links zu Impressum/Datenschutz (Platzhalter-Seiten).
 
 ## 8. Barrierefreiheit & Qualität (Pflicht)
